@@ -22,8 +22,9 @@ class PUZZLEPLATFORMS_API IMyInterface
 	// Add interface functions to this class. This is the class that will be inherited to implement this interface.
 public:
 
-	virtual void Host() = 0;
-	virtual void Enter(const FString& Address) = 0;
+	virtual void Host(FString name) = 0;
+	virtual void Enter(uint32 index) = 0;
 	//virtual void Quit() = 0;
 	virtual void ToMainMenu() = 0;
+	virtual void RefreshServerList()= 0;
 };
